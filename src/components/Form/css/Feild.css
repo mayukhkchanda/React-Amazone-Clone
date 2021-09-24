@@ -1,0 +1,38 @@
+.form__feild {
+  margin: 15px 0px;
+  width: 100%;
+}
+
+.feild__name {
+  font-size: 1.05em;
+  font-weight: 600;
+  margin-bottom: 9px;
+}
+
+.feild__input {
+  height: 30px;
+  width: calc(100% - 30px);
+  border-radius: 5px;
+  border: 1.5px solid black;
+  padding-left: 5px;
+  font-size: 1.03em;
+  outline: none;
+}
+
+.feild__input.error {
+  border: 1px solid #f37e83;
+  background: #fff2f2;
+}
+
+.feild__error {
+  font-size: 15px;
+  color: #e8000a;
+  margin-bottom: 5px;
+  width: 70%;
+  max-width: 350px;
+  margin-top: 8px;
+  padding: 4px 6px;
+  border: 1px solid #fddfe0;
+  border-radius: 5px;
+  background: #faf6f6;
+}

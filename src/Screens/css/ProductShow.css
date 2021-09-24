@@ -1,0 +1,130 @@
+.productShow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 100vw;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: #fff;
+  margin: 0 auto;
+  padding: 40px 0px;
+}
+
+.productShow__product {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+}
+
+.productShow .product__image > img {
+  max-height: 400px;
+  object-fit: contain;
+  max-width: 335px;
+  margin: 0px 70px;
+}
+
+.productShow .product__image {
+  align-self: baseline;
+  margin-top: 10px;
+}
+
+.productShow .product__description {
+  position: relative;
+}
+
+.productShow .description__title {
+  /* position: absolute; */
+  /* top: -95px; */
+  font-size: 1.49em;
+  font-weight: 500;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #bebebe;
+}
+
+.productShow .description__price {
+  /* position: absolute; */
+  /* top: -15px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.productShow .description__stocki {
+  /* position: absolute; */
+  /* top: 20px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.productShow .stocki_text1 {
+  color: #007600;
+  font-size: 0.95em;
+}
+
+.productShow .stocki_text2 {
+  color: #b12704;
+  font-size: 0.875em;
+}
+
+.productShow .description__brief {
+  /* position: relative;
+  top: 60px; */
+  max-width: 330px;
+  width: 100%;
+}
+
+.productShow .description__price span {
+  font-size: 1.105em;
+  font-weight: 500;
+  letter-spacing: 0.35px;
+}
+
+/* .description__price .price__star {
+} */
+
+.productShow .description__price .color-red {
+  color: #b12704;
+}
+
+.productShow .description__price .font-medium {
+  font-size: 1.455em;
+  font-weight: 500;
+}
+
+.productShow .description__brief h2 {
+  margin: 5px 0px;
+  font-size: 1.375em;
+  font-weight: 500;
+}
+
+.productShow .description__brief span {
+  font-size: 1.05em;
+}
+
+@media all and (max-width: 800px) {
+  .productShow .product__image > img {
+    margin: 0px 30px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .productShow {
+    flex-direction: column;
+  }
+  .productShow__product {
+    flex-direction: column;
+  }
+  .productShow .product__description {
+    margin-top: 20px;
+    max-width: calc(100vw - 40px);
+  }
+  .productShow .product__image > img {
+    height: 300px;
+    width: 300px;
+  }
+  .productShow .product__image {
+    align-self: center;
+  }
+}

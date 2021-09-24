@@ -1,0 +1,121 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 10px;
+  padding: 20px;
+  max-height: 400px;
+  min-width: 150px;
+
+  background: #fff;
+  border: 1px solid lightgray;
+  font-family: helvetica;
+  transition: all 250ms ease-in-out;
+
+  z-index: 1;
+}
+
+.product.landscape {
+  flex-direction: row;
+  justify-content: flex-start;
+  border: unset;
+}
+
+.product:hover {
+  transform: scale(1.01);
+  box-shadow: 0 5px 5px 0 rgb(213 217 217 / 50%);
+}
+
+.product .product__image > img {
+  max-height: 200px;
+  width: 200px;
+  object-fit: contain;
+  margin: 10px 0px;
+}
+
+.product__description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.product__description.landscape {
+  margin-left: 25px;
+}
+
+.product__description > * {
+  margin-top: 10px;
+}
+
+.description__title {
+  font-size: 1.165em;
+  font-weight: 700;
+}
+
+.description__button {
+  align-self: center;
+}
+
+.description__button.landscape {
+  align-self: flex-start;
+}
+
+.description__button.lanscape {
+  align-self: unset;
+}
+
+.description__button > button {
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 1pc;
+  border: none;
+  background: #ffd814;
+  border-color: #fcd200;
+  box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+  font-size: 1.105em;
+  cursor: pointer;
+  min-width: 170px;
+}
+
+.description__button > button:hover {
+  background: #f7ca00;
+  border-color: #f2c200;
+  box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+}
+
+.quantity__text--payments {
+  font-size: 1.02em;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  padding-bottom: 3px;
+}
+
+@media all and (max-width: 600px) {
+  .product {
+    flex-direction: row;
+    border-radius: 6px;
+    justify-content: flex-start;
+    margin: 0px 10px;
+  }
+
+  .product:hover {
+    transform: unset;
+  }
+
+  .product .product__image > img {
+    max-height: 160px;
+    width: 87px;
+  }
+  .product__description {
+    margin-left: 20px;
+  }
+  .description__button {
+    align-self: flex-start;
+  }
+  .description__title {
+    font-size: 0.975em;
+  }
+}

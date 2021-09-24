@@ -1,0 +1,15 @@
+.signin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: helvetica;
+  margin: 30px auto 0px;
+  padding: 25px;
+}
+
+.signin__logo > img {
+  width: 150px;
+  object-fit: contain;
+}

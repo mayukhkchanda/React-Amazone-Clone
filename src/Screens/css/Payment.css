@@ -1,0 +1,134 @@
+.payments {
+  display: flex;
+  flex-direction: column;
+  font-family: helvetica;
+  align-items: flex-start;
+}
+
+.payments__header {
+  font-weight: 400;
+  font-size: 1.95em;
+  align-self: center;
+  margin: 20px 0px;
+}
+
+.payments__info {
+  background: #fff;
+  width: 96.9%;
+  border: 1px solid lightgray;
+  padding: 20px;
+}
+
+.info__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.info__row.border-topBottom {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.info__row--left {
+  font-size: 1.15em;
+  font-weight: 600;
+  flex: 0.2 1;
+}
+
+.info__row--right {
+  margin-left: 50px;
+  flex: 0.8 1;
+}
+
+.info__row--right.flexRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  font-size: 1.2em;
+}
+
+.info__row--right__penIcon {
+  margin-left: 10px;
+}
+
+.info__row__order {
+  font-size: 1.05em;
+  font-weight: 600;
+}
+
+.info__row--right__address.hidden {
+  display: none;
+}
+
+.info__row--left.align-center {
+  align-self: center;
+}
+
+input.info__row--right__input {
+  height: 30px;
+  width: 22%;
+  border-radius: 5px;
+  border: 1px solid #000;
+  padding-left: 6px;
+  font-family: helvetica;
+  font-size: 0.75em;
+  font-weight: 500;
+}
+
+button.info__row--right__edit {
+  margin-left: 10px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.info__row--right__confirmBtn {
+  margin: 15px 0px 10px;
+  border-radius: 2pc;
+  border: none;
+  padding: 10px;
+  font-size: 1.05em;
+  font-weight: 500;
+  background: #ffd814;
+  border-color: #fcd200;
+  box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+  cursor: pointer;
+}
+
+.info__row--payment__options {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.info__row--payment__options span {
+  margin-right: 15px;
+}
+
+@media all and (max-width: 600px) {
+  .payments__info {
+    width: 90%;
+  }
+
+  .info__row {
+    flex-direction: column;
+  }
+
+  .info__row--right {
+    margin-left: unset;
+    margin-top: 15px;
+  }
+
+  input.info__row--right__input {
+    width: 100%;
+  }
+
+  .payments .product.landscape {
+    margin-bottom: 20px;
+  }
+
+  button.info__row--right__edit {
+    font-size: 1.1em;
+  }
+}

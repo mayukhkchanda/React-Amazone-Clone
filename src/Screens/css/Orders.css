@@ -1,0 +1,22 @@
+.orders {
+  font-family: helvetica;
+  width: calc(100% - 20px);
+  max-width: 800px;
+  margin: 20px auto 0px;
+  padding: 10px;
+}
+
+.orders__header {
+  display: flex;
+  flex-direction: column;
+}
+
+.orders__header__title {
+  border-bottom: 2px solid #fdd926;
+  margin-bottom: 10px;
+}
+
+.orders__header__number {
+  font-weight: 600;
+  font-size: 0.9em;
+}

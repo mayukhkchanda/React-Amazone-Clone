@@ -1,0 +1,43 @@
+.order {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  font-family: helvetica;
+  background: aqua;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.order__header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 18px;
+}
+
+.order__header__icon svg {
+  width: 20px;
+}
+
+.order__header__text {
+  margin-left: 15px;
+  font-size: 1.1em;
+}
+
+.order__message {
+  font-size: 0.875em;
+  margin-bottom: 15px;
+}
+
+.order__link {
+  width: calc(100% - 25px);
+  height: 30px;
+  font-size: 1em;
+  font-weight: 600;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: #ffd814;
+  border-color: #fcd200;
+}

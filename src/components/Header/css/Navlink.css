@@ -1,0 +1,43 @@
+.nav__navLink {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 10px;
+  padding: 8px 4px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.nav__navLink:hover {
+  border: 1px solid #fff;
+  border-radius: 6px;
+}
+
+.nav__navLink .navLink__text1 {
+  font-size: 10px;
+}
+
+.nav__navLink .navLink__text2 {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+@media all and (max-width: 600px) {
+  .nav__navLink {
+    display: none;
+  }
+  .nav__navLink.mobile-only {
+    display: flex;
+    margin-right: 18px;
+    margin-bottom: 3px;
+    padding: 4px;
+  }
+  .nav__navLink.mobile-only .navLink__text1 {
+    font-size: 9px;
+  }
+
+  .nav__navLink.mobile-only .navLink__text2 {
+    font-size: 13.5px;
+    font-weight: 800;
+  }
+}

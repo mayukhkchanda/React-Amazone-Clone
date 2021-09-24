@@ -1,0 +1,33 @@
+.header__basket {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 2px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.header__basket:hover {
+  border: 1px solid #fff;
+}
+
+.basket__icon {
+  font-size: 1.575em;
+  margin-right: 6px;
+}
+
+.basket__number {
+  font-weight: 700;
+  font-size: 1.115em;
+}
+
+@media all and (max-width: 600px) {
+  .header__basket {
+    padding: 3px;
+    margin-bottom: 4px;
+  }
+  .basket__icon {
+    font-size: 1.465em;
+  }
+}

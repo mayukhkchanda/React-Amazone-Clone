@@ -1,0 +1,111 @@
+.productShow_subTotal {
+  display: flex;
+  flex-direction: column;
+
+  padding: 50px 30px;
+  margin: 0px 0px 0px 30px;
+
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+.productShow_subTotal button {
+  margin-bottom: 10px;
+  border-radius: 2pc;
+  border: none;
+  padding: 10px;
+  font-size: 1.05em;
+  font-weight: 500;
+  box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+  cursor: pointer;
+}
+
+.productShow_subTotal .button1-color {
+  background: #ffd814;
+  border-color: #fcd200;
+}
+
+.productShow_subTotal .button2-color {
+  background: #ffa41c;
+  border-color: #ff8f00;
+}
+
+.transcation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.transaction__lockIcon > svg {
+  height: 20px;
+  width: 20px;
+  fill: #8e8e8e;
+  justify-self: flex-start;
+  margin-left: 5px;
+}
+
+.transcation__text {
+  color: #007185;
+  margin-left: 10px;
+}
+
+.giftOptions {
+  margin-left: 6px;
+  margin-top: 10px;
+}
+
+.giftOptions input {
+  transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  padding: 10px;
+}
+
+.giftOptions span {
+  margin-left: 7px;
+  font-size: 1.105em;
+  letter-spacing: 0.275px;
+  font-weight: 500;
+}
+
+@media all and (max-width: 800px) {
+  .productShow_subTotal {
+    margin: 0px 15px;
+    padding: 20px;
+  }
+  .productShow_subTotal button {
+    padding: 7px 10px;
+    font-size: 0.8775em;
+  }
+  .transaction__lockIcon > svg {
+    height: 15px;
+    width: 15px;
+  }
+  .transcation__text {
+    font-size: 0.85em;
+  }
+  .giftOptions span {
+    font-size: 0.7065em;
+  }
+  .giftOptions input {
+    transform: scale(1);
+    padding: 8px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .productShow_subTotal {
+    margin: 20px auto 0px;
+    width: calc(100vw - 105px);
+  }
+  .transcation__text {
+    font-size: 0.975em;
+  }
+  .giftOptions input {
+    transform: scale(1.1);
+    padding: 10px;
+  }
+  .giftOptions span {
+    font-size: 0.9785em;
+  }
+}
