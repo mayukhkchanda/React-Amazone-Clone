@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./css/ProductShow.css";
 import Loader from "../components/Loader";
 
-import history from "../history";
-
 import { connect } from "react-redux";
 import { fetchProduct, addProductToBasket } from "../actions";
 import Subtotal from "../components/Subtotal";
@@ -27,15 +25,16 @@ const ProductShow = ({
       const width = window.innerWidth;
 
       /**Make the Image size, font size reponsive */
-      setHeight(parseInt(0.46 * width - 151.67));
-      setTitleFont(Math.min(0.00057 * width + 0.72, 1.49));
-      setPriceFont(Math.min(0.00092 * width + 0.21, 1.1));
-      setDescFont(Math.min(0.00035 * width + 0.9, 1.375));
-      setBriefFont(Math.min(0.0002 * width + 0.79, 1.05));
+      if (width > 600) {
+        // console.log("Resizing...");
+        setHeight(parseInt(0.46 * width - 151.67));
+        setTitleFont(Math.min(0.00057 * width + 0.72, 1.49));
+        setPriceFont(Math.min(0.00092 * width + 0.21, 1.1));
+        setDescFont(Math.min(0.00035 * width + 0.9, 1.375));
+        setBriefFont(Math.min(0.0002 * width + 0.79, 1.05));
+      }
     };
-
     window.addEventListener("resize", resizeImage);
-
     return () => {
       window.removeEventListener("resize", resizeImage);
     };

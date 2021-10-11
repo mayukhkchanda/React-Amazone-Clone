@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background: #efefef;
+  background: #b7b7b7;
   border-radius: 5px 5px 0px 0px;
   padding: 5px;
 }
@@ -54,7 +54,7 @@
 .item__number {
   font-weight: 600;
   font-size: 1.1em;
-  color: #07a8a8;
+  color: #006e74;
 }
 
 @media all and (max-width: 600px) {

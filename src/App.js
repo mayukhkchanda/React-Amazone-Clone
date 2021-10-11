@@ -11,7 +11,7 @@ import ProductShow from "./Screens/ProductShow";
 import OrderConfirmed from "./Screens/OrderConfirmed";
 
 import history from "./history";
-import { Router, Route, Switch, Link } from "react-router-dom";
+import { Router, Route, Switch } from "react-router-dom";
 
 import { signInUser, signOutUser } from "./actions";
 import { connect } from "react-redux";
